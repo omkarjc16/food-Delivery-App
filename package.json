@@ -1,0 +1,29 @@
+{
+  "name": "food-delivery-app",
+  "version": "1.0.0",
+  "description": "it is demo app as like swiggy",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/omkarjc16/food-Delivery-App.git"
+  },
+  "keywords": [
+    "food",
+    "delivery",
+    "app",
+    "api",
+    "feching"
+  ],
+  "author": "omkar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/omkarjc16/food-Delivery-App/issues"
+  },
+  "homepage": "https://github.com/omkarjc16/food-Delivery-App#readme",
+  "devDependencies": {
+    "parcel": "^2.12.0"
+  }
+}
