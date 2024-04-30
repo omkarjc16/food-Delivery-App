@@ -2,9 +2,10 @@
   "name": "food-delivery-app",
   "version": "1.0.0",
   "description": "it is demo app as like swiggy",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel index.html"
   },
   "repository": {
     "type": "git",
@@ -24,6 +25,15 @@
   },
   "homepage": "https://github.com/omkarjc16/food-Delivery-App#readme",
   "devDependencies": {
-    "parcel": "^2.12.0"
+    "buffer": "^6.0.3",
+    "parcel": "^2.12.0",
+    "postcss": "^8.4.38",
+    "process": "^0.11.10",
+    "tailwindcss": "^3.4.3"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.23.0"
   }
 }
