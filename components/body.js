@@ -1,13 +1,15 @@
 import { useState, useEffect } from "react";
-import Card from "./card";
+import Card, { CardWithPromoted } from "./card";
 import { swiggyapikey } from "../constants";
-import ShimmerUI from "../shimmer";
+import Shimmer from "../shimmer";
 import { Link } from "react-router-dom";
 const Body = () => {
   const [restaurants, setRestaurants] = useState([]);
   const [filterrestaurants, setfilterRestaurants] = useState([]);
   const [searchTxt, setsearchTxt] = useState();
   const [errorMessage, setErrorMessage] = useState("");
+
+  const RestroWithPromo =CardWithPromoted(Card);
 
   useEffect(() => {
     fechdata()
@@ -39,7 +41,6 @@ const Body = () => {
           () => {
             if (searchTxt != "") {
               const filterRestro = filterData(searchTxt, restaurants);
-              // setRestaurants(filterRestro);
               setfilterRestaurants(filterRestro);
               if (filterRestro.length === 0) {
                 setErrorMessage("No matches restaurant found");
@@ -54,15 +55,16 @@ const Body = () => {
       </div>
       {errorMessage && <div className="error-container">{errorMessage}</div>}
       <div className="flex flex-wrap justify-between w-[100%]">{
-        restaurants.length === 0 ? <ShimmerUI /> :
+        restaurants.length == 0 ? <Shimmer /> :
           filterrestaurants.map((restaurant) => {
             return (
               <Link
                 to={"/ResMenu/" + restaurant?.info?.id}
                 key={restaurant?.info?.id}
-              >
-                {/* if we click on any restaurant card it will redirect to that restaurant menu page */}
-                <Card {...restaurant?.info}  />
+              >{
+                restaurant?.info?.isOpen ? RestroWithPromo(<Card {...restaurant?.info}/>):(<Card {...restaurant?.info}  />)
+                }
+                
               </Link>
             )
           })}
