@@ -8,7 +8,6 @@ const Menu = () => {
   const [ShowMenu, SetShowMenu ] =useState(null);
   return (
     <>
-    {console.log(MenuItems.length)}
       {MenuItems.length === 0 ? <MenuShimmer /> :
         <div className="w-[50%] mx-auto">
           <h1 className="self-start py-4 font-bold text-xl">{RestrorentData?.name}</h1>

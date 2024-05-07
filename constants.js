@@ -6,3 +6,5 @@ export const RESTAURANT_TYPE_KEY = "type.googleapis.com/swiggy.presentation.food
 export const MENU_ITEM_TYPE_KEY = "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory";
 export const shimmer_card_unit =20; 
 export const shimmer_menu_card_unit =4;
+export const Github_API_User = "https://api.github.com/users/";
+export const User ="omkarjc16" 

@@ -1,12 +1,17 @@
 import { FoodItemsImgURL } from "../constants";
 import { useState } from "react";
 import Dummy from "../Assets/Dummy.png"
+import { addItem } from "../Redux/reduxSlices";
+import { useDispatch } from "react-redux";
 const FoodItems = ({ foodItemData }) => {
+    const dispatch = useDispatch();
     const [buttonTxt, setButtonTxt] = useState("Add");
     const [buttonStyle, setButtonStyle] = useState("bg-green-700");
-    const toggleButton = () => {
-        setButtonTxt((prevTxt) => (prevTxt === "Add" ? "Remove" : "Add"));
-        setButtonStyle((prevStyle) => (prevStyle === "bg-green-700" ? "bg-red-700" : "bg-green-700"));
+    let toggleButton = (item) => {
+        // setButtonTxt((prevTxt) => (prevTxt === "Add" ? "Remove" : "Add"));
+        // setButtonStyle((prevStyle) => (prevStyle === "bg-green-700" ? "bg-red-700" : "bg-green-700"));
+        dispatch(addItem(item))
+
     };
     return (
         <div>
@@ -20,8 +25,8 @@ const FoodItems = ({ foodItemData }) => {
                         </div>
                         <div className="flex flex-col w-[20%] justify-evenly items-center">
                             <img className="relative w-[100%] object-cover rounded-xl" src={item.card.info.imageId ? FoodItemsImgURL + item.card.info.imageId : Dummy} alt="foodimg" />
-                            <button className={`p-2 rounded-lg text-white w-[50%] ${buttonStyle}`} onClick={toggleButton}>
-                                {buttonTxt}
+                            <button className={`p-2 rounded-lg text-white w-[50%] ${buttonStyle}`} onClick={()=>toggleButton(item)}>
+                            {buttonTxt}
                             </button>
                         </div>
                     </div>

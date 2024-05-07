@@ -6,16 +6,19 @@ import About from "./components/about";
 import Error from "./components/error";
 import Contact from "./components/contactus";
 import Menu from "./components/RestroMenu";
+import Cart from "./components/cart";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 const root = ReactDom.createRoot(document.getElementById("foodapp"))
 const usecontext =createContext();
+import { Provider } from "react-redux";
+import AppStore from "./Redux/appStore";
 const AppLayout = () => {
     return (
-        <div className=" overflow-hidden">
-            <usecontext.Provider>
+        <div className="overflow-hidden">
+            <Provider store={AppStore}>
             <Header />
             <Outlet />
-            </usecontext.Provider>
+            </Provider>
         </div>
     )
 }
@@ -40,6 +43,10 @@ const approuter = createBrowserRouter([
             {
                 path: "ResMenu/:resId",
                 element: <Menu />
+            },
+            {
+                path: "/cart",
+                element: <Cart />
             },
         ],
         errorElement: <Error />
