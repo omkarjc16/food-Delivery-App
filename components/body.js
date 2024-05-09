@@ -54,7 +54,7 @@ const Body = () => {
         }>search</button>
       </div>
       {errorMessage && <div className="error-container">{errorMessage}</div>}
-      <div className="flex flex-wrap justify-between w-[100%]">{
+      <div className="flex flex-wrap px-4 justify-between w-[100%]">{
         restaurants.length == 0 ? <Shimmer /> :
           filterrestaurants.map((restaurant) => {
             return (
@@ -62,8 +62,10 @@ const Body = () => {
                 to={"/ResMenu/" + restaurant?.info?.id}
                 key={restaurant?.info?.id}
               >{
+                
                 restaurant?.info?.isOpen ? RestroWithPromo(<Card {...restaurant?.info}/>):(<Card {...restaurant?.info}  />)
                 }
+                {console.log(restaurant?.info)}
                 
               </Link>
             )

@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import { image_URL } from "../constants";
 const Card = ({
   name,areaName, avgRating, cuisines,
