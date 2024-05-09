@@ -1,3 +1,42 @@
+# 🍔 Food-Delivery-App 🍔
+
+**Food-Delivery-App** This project created for Showing demontration of how food apps Actually works. Using Swiggies RealTime API im feching the data and bulding App i have used REactJs and for state managment i have used Redux and styling Tailwind CSS is used.
+
+## Features
+- RealTime Swiggy Api fech.
+- Data available based on Locality.
+- Restrorents Online/offline  status will shows.
+- Seamless interaction Between components
+- Responsive design to adapt to different screen sizes.
+
+## Screenshots
+<div style="display: flex; justify-content: space-between;">
+    <img src="https://drive.google.com/uc?export=download&id=1mpjRKHrdrSt2EVfcfpWUaMh4VXdozIbO" width="700" style="margin-right: 20px;">
+    <img src="https://drive.google.com/uc?export=download&id=1S02O3cP0R8L570cCp6z3Hq4qBPBvWcfq" width="700" style="margin-right: 20px;">
+    <img src="https://drive.google.com/uc?export=download&id=1gnIIfcR5aZdVII7WYnb5qrzAdiMgFCnJ" width="700" style="margin-right: 20px;">
+    <img src="https://drive.google.com/uc?export=download&id=1WoqNzj9xD_u7ive8Lu4hfZpZ8yvNtYwy" width="700">
+</div>
+
+## Technologies Used
+- React Js 
+- Redux
+- Tailwind CSS
+- Swiggy API
+
+## Usage & Clone Repository
+- Download Repo. zip or use git clone 
+- Extract in your Local system
+- open in Code Editor and Type npm i in Terminal
+- Type npm start in Terminal
+- App Will Run
+
+## Development & Environment Setup
+- Install Node js using https://nodejs.org/en this link
+- install git
+- Install Extensions for better code writing (Optional) -:
+    - ES7+ React/Redux/React-Native 
+    - Material Icons
+
 # Type of testing
 - unit testing
 - integration testing
@@ -14,42 +53,6 @@
 - include ['@babel/preset-react',{runtime:'automatic'}] this inside babel config.js file 
 - install @testing-library/jest-dom 
 
-# Food-Delivery-App
-**Food-Delivery-App** This project created for Showing demontration of how food apps Actually works. Using Swiggies RealTime API im feching the data and bulding App i have used REactJs and for state managment i have used Redux and styling Tailwind CSS is used.
-## Features
-
-- RealTime Swiggy Api fech.
-- Data available based on Locality.
-- Restrorents Online/offline  status will shows.
-- Seamless interaction Between components
-- Responsive design to adapt to different screen sizes.
-
-## Screenshots
-<div style="display: flex; justify-content: space-between;">
-    <img src="https://drive.google.com/uc?export=download&id=1mpjRKHrdrSt2EVfcfpWUaMh4VXdozIbO" width="200" style="margin-right: 20px;">
-    <img src="https://drive.google.com/uc?export=download&id=1S02O3cP0R8L570cCp6z3Hq4qBPBvWcfq" width="200" style="margin-right: 20px;">
-    <img src="https://drive.google.com/uc?export=download&id=1gnIIfcR5aZdVII7WYnb5qrzAdiMgFCnJ" width="200" style="margin-right: 20px;">
-    <img src="https://drive.google.com/uc?export=download&id=1WoqNzj9xD_u7ive8Lu4hfZpZ8yvNtYwy" width="200">
-</div>
-
-
-
-## Technologies Used
-
-- Google Firebase
-- Kodular.io
-- 
-## Usage
-
-Once you've install and opened app then signup with your credintals and test my app.
-
-## Checkout App
-
-https://github.com/omkarjc16/Human-Security-Project--Bio-id-Based-GeoTagging-systems-for-Humans/blob/main/Geotagging_for_human_copy.apk
-
 ## Credits
-
 - Author: Omkar chavan
-
-## License
 
