@@ -2,10 +2,10 @@
   "name": "food-delivery-app",
   "version": "1.0.0",
   "description": "it is demo app as like swiggy",
-  "main": "app.js",
   "scripts": {
     "start": "parcel index.html",
-    "test": "jest"
+    "test": "jest",
+    "build":"parcel build index.html"
   },
   "repository": {
     "type": "git",

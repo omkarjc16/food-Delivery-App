@@ -52,7 +52,7 @@
 - install @babel/preset-react library in dev dependancies
 - include ['@babel/preset-react',{runtime:'automatic'}] this inside babel config.js file 
 - install @testing-library/jest-dom 
-
+    
 ## Credits
 - Author: Omkar chavan
 
