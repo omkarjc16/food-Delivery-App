@@ -43,6 +43,7 @@
 - end to end testing
 
 # setting up testing Environment
+- add CORS chorme extension for work well swiggy API 
 - install react-testing library
 - install jest
 - along with jest install Babel Dependencies
