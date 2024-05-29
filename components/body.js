@@ -20,11 +20,15 @@ const Body = () => {
     return filterdata;
   }
   const fechdata = async () => {
-    const data = await fetch(swiggyapikey)
-    const jsonData = await data.json();
-    const restrodata =await jsonData?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants;
-    setRestaurants(restrodata);
-    setfilterRestaurants(restrodata);
+ try {
+     const data = await fetch(swiggyapikey)
+     const jsonData = await data.json();
+     const restrodata =await jsonData?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants;
+     setRestaurants(restrodata);
+     setfilterRestaurants(restrodata);
+ } catch (error) {
+  console.error("Error fetching data:", error);
+ }
   }
   return (
     <div className="flex-row overflow-hidden">
